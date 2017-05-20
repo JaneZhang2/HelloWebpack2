@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
-  entry: './src/index.jsx',
+  entry: './',
   output: {
     devtoolModuleFilenameTemplate: 'webpack:///[absolute-resource-path]',
     filename: 'bundle.js',
