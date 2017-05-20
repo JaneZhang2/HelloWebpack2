@@ -4,9 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
-  entry: './',
+  entry: [
+    'react-hot-loader/patch',
+    './index'
+  ],
   output: {
-    devtoolModuleFilenameTemplate: 'webpack:///[absolute-resource-path]',
+    devtoolModuleFilenameTemplate: 'webpack:///[absolute-resource-path]/',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
