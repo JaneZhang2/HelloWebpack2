@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "webpack-dev-server --env development",
     "build": "rm -rf dist && webpack --env production",
     "lint": "eslint src/index.jsx"
